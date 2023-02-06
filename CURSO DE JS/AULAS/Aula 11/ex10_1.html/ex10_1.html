@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Será que você é brasileiro?</title>
+    <style>
+        #spanjs {
+            color: rgb(64, 255, 47);
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <span>Minha nacionalidade é: </span>
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="resp"></div>
+
+
+    <script>
+        function verificar() {
+            var nactxt = document.getElementById('nac')
+            var res = document.getElementById('resp')
+            var pais = (nactxt.value)
+            
+            if (pais.toLowerCase() === "brasileiro") {
+                res.innerHTML = `Vocé é <span id="spanjs">BRASILEIRO</span> !!`} else {
+            res.innerText = `Tu é gringo doidão`
+        }
+    }
+    </script>
+</body>
+</html>

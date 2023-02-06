@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex002.css">
+    <script src="ex002.js"></script>
+    <title>Exercicio 002</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div class="menu">
+            <!--Ano de nascimento-->
+            <div class="sec">
+                <p>Ano de nascimento: 
+                    <input type="number" name="Ano de nascimento" id="txtano">
+                </p>
+            </div>
+            <!--Escolher Sexo-->
+            <div id="seg_sec"><p>Sexo: 
+                <input type="radio" name="radsex" id="sexmasc" checked>
+                <label for="sexmasc">Masculino</label>
+
+                <input type="radio" name="radsex" id="sexfem">
+                <label for="sexfem">Feminino</label>
+            </p>
+            </div>
+            <!--Botão de verficar-->
+            <div id="divbtn">
+                <input id="verificar-bt" type="button" value="Verificar" onclick="verificar()">
+            </div>
+            <!--Resultado-->
+            <div id="res">
+                <p>Preencha os dados acima para ver o resultado!</p>
+            </div>
+            <!--Parte dos anos e imagem-->
+            <div id="img-div">
+                <img id="foto" src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Nicolas DEV</p>
+    </footer>
+</body>
+</html>
